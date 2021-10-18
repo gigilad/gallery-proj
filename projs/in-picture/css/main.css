@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+}
+h1{
+    background-color: lightcoral;
+    text-align: center;
+    font-size: 70px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.board{
+    height: 600px;
+    background-color:lightgoldenrodyellow ;
+     display: block;
+    font-family: 'Atma', cursive;
+    }
+
+img{
+    margin-top: 20px;
+    height: 300px;
+    width: 400px;
+    margin-left: 36%;
+}
+.options{
+    width: 1300px;
+    height: 200px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    padding: 20px;
+
+}
+.opt-btn{
+padding:10px ;
+background-color:rgb(212, 233, 247);
+border-radius: 12%;
+font-weight:bold;
+margin-top: 20px;
+font-size: 20px;
+margin-left: 15px;
+
+
+}

@@ -1,0 +1,138 @@
+
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    text-align: center;
+    margin: 0;
+  align-items: center;
+    flex-direction: column;
+  background-color:#333;
+  color: white;
+  }
+ h1{
+margin: auto;
+margin-top: 20px;
+  border-radius: 15px;
+  border: 2px solid white;
+  height: 80;
+  width: 400px;
+  font-size: 40px;
+  padding: 30px;
+  background-color:lightseagreen;
+  margin-left: 40%;
+ }
+  
+  .board{
+    justify-content: center;
+    display: inline-grid;
+     align-items:center ;  
+  background-color:#777;
+      margin-top: 40px;
+      width: 100%;
+      height:100%;
+      gap: 4px;
+      border:2px  ;
+  
+  }
+  
+  .cell {
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      font-size: 1.5em;
+      border: 2px solid rgb(0, 0, 0) ;
+      background-color: #f1d483;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    
+    .timer{
+      margin-left: 46%;
+       margin-top: 20px;
+       border-radius: 15px;    
+       width: 150px;
+        background-color:lightseagreen;
+        padding: 20px;
+        font-size: 30px;
+    }
+    .lives{
+      margin-top: 20px;
+      margin-left: 45%;
+      
+
+    }
+  .lives td{
+    
+    text-align: center; 
+    border-radius: 15px; 
+   height: 60px;
+   font-size: 20px;
+   padding: 15px;
+   background-color:lightseagreen;
+   border: 2px solid white;
+  }
+  
+    .head{
+      margin: auto;
+      margin-top: 20px;
+      margin-left: 42%;
+
+    }
+    .head td{
+    text-align: center; 
+       border-radius: 15px; 
+      height: 80px;
+      font-size: 20px;
+      padding: 30px;
+      background-color:lightseagreen;
+      border: 2px solid white;
+
+  
+    }
+    .levels{
+  text-align: center;  
+}
+    .btn-level{
+      
+      color: white;
+      margin-left: 15px;
+       border-radius: 15px;    
+       height: 60px;
+       width: 150px;
+       background-color:lightseagreen;
+        padding: 15px;
+        font-size: 30px;
+        margin-top: 10px;
+
+    }
+    .safety{
+      margin-top: 20px;
+      text-align: center;
+
+    }
+  .safe{
+    margin-left: 15px;
+    text-align: center;
+    border-radius: 15px; 
+   height: 60px;
+   font-size: 20px;
+   padding: 15px;
+   background-color:lightseagreen;
+   color: white;
+  }
+  .hints{
+    margin-top: 20px;
+    margin-left: 46%;
+  }
+  .hints td{
+    text-align: center; 
+    border-radius: 15px; 
+   height: 60px;
+   font-size: 20px;
+   padding: 15px;
+   background-color:lightseagreen;
+   border: 2px solid white;
+  }
+ 
