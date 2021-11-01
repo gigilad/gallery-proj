@@ -1,0 +1,336 @@
+@font-face {
+    font-family: impact;
+    src: url(./fonts/impact/impact\.ttf);
+}
+@font-face {
+    font-family: oxygen;
+    src: url(./fonts/oxygen/Oxygen-Regular.ttf);
+}
+@font-face {
+    font-family: antique;
+    src: url(./fonts/zet-antique/ZenAntique-Regular.ttf);
+}
+@font-face {
+    font-family: furker;
+    src: url(./fonts/fruktur/Fruktur-Regular.ttf);
+}
+
+html{
+  font-family: antique;
+}
+body {
+  margin: 0;
+}
+
+button{
+  margin-inline-start: 10px;
+    width: 55px;
+    height: 30px;
+    border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: black;
+}
+
+/* HELPERS */
+.flex {
+  display: flex;
+}
+.main-container {
+  max-width: 400px;
+  margin: auto;
+}
+.flex.space-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.space-around{
+    justify-content: space-around;
+}
+.clean-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.align-items{
+    align-items: center;
+}
+.hide {
+    display: none;
+}
+li{
+  margin-inline-end: 10px;
+}
+
+
+body.menu-open .main-nav {
+  transform: translateX(0);
+}
+
+/* start */
+.btn-menu{
+  position: fixed;
+  top: 0.5rem;
+  right: 0.7em;
+  width: 3rem;
+  height: 2.1rem;
+  border: none;
+}
+.main-nav{
+  position: fixed;
+  top: 3.1rem;
+  right: 0;
+  flex-direction: column;
+  background-color: #33BE6D;
+  height: 15vh;
+  border-bottom-left-radius: 50vh;
+  width: 6rem;
+  justify-content: flex-start;
+  align-items: flex-end;
+  transform:translateX(100%);
+
+  transition: transform .6s;
+}
+.main-nav a{
+  color: black;
+  font-size: 1.2em;
+font-family:antique ;
+
+}
+.main-nav :hover{
+  /* color: #383B42; */
+    /* border-bottom: 4px solid #383B42; */
+  color: honeydew; 
+   border-bottom: 4px solid #e61111;
+}
+.main-nav > * {
+  margin-block-start:15px ;
+  margin-inline-end: 10px;
+}
+
+
+.main-header-container {
+  background-color: #33BE6D;
+margin:0 auto;
+}
+.main-header{
+    flex-grow: 1;
+}
+.logo {
+  font-family: furker ;
+    font-size: 2.5rem;
+    color: #e41304;
+    flex-grow: 1;
+}
+.gallery-container {
+  background-color: #98c6ab;
+}
+.gallery-header{
+  flex-direction: column;
+}
+.gallery-header >:first-child {
+  margin-inline-end: 20px;
+
+}
+.gallery-container .gallery-header {
+  background-color: #383B42;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-container .search-form .search-word {
+  padding: 14px;
+  border: none;
+  background-color: honeydew;
+  border-radius: 10px;
+}
+.search-form{
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.search-btn {
+  background-color: honeydew;
+  border: none;
+}
+.img-container {
+  background-color: #98c6ab;
+  display: grid;
+  grid-template-columns: repeat(2, 170px);
+  grid-auto-rows: 180px;
+  gap: 7px;
+  padding: 1em;
+}
+
+.img-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.main-meme-container{
+    flex-direction: column;
+    margin: 1em;
+    /* margin-top: 2.5rem; */
+}
+.meme-container{
+  background-color: #c7d8b2;
+  height: auto;
+    flex-direction: row;
+    align-items: center;
+}
+.main-btn-content{
+margin-block-start: 2.5rem;
+flex-direction: column;
+}
+.main-btn-content> *{
+    padding: 12px;
+}
+.btn-control img{
+margin: 0px 3px;
+}
+.main-btn-content img{
+    height:40px;
+    width: 40px;
+    border: 2px solid lightslategray;
+    padding: 7px;
+}
+.btn-color{
+  width: 56px;
+  height: 58px;
+  padding: 8px;
+  margin-inline-start: 4px;
+}
+.font-options , .text-input , .edit-btn > * , .btn-control > *{
+  background-color: rgb(255, 254, 251);
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.font-options:hover , .text-input:hover , .edit-btn > *:hover , .btn-control > *:hover {
+  background-color: wheat;
+  border: 2.5px solid black;
+
+}
+.download-btn-container {
+  margin-block-start: 0.8em;
+}
+.download-btn{
+  background-color: white;
+  padding: 1em;
+  font-size: 1.3em;
+  border-radius: 10px;
+  border: 1px solid grey;
+
+
+}
+.download-btn:hover{
+  background-color: rgb(231, 159, 25);
+  border: 3px solid black;
+}
+.copyrights{
+  background-color:#33BE6D ;
+font-size: 1.8em  ;
+padding: 0.8em;
+text-align: center;
+color: white;
+}
+
+
+@media (min-width:600px) {
+  .btn-menu{
+    display: none;
+  }
+  .meme-container{
+    background-color: #c7d8b2;
+    height: 57rem;
+
+  }
+  .gallery-container .search-form .search-word {
+    padding: 21px;
+  }
+  .gallery-header{
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 15px;
+
+
+  }
+  .main-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .search-form{
+    flex-grow: 1;
+    justify-content: center;
+  }
+  .meme-Keywords-container{
+    flex-grow: 1;
+  }
+  
+  .img-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-auto-rows: 200px;
+    gap: 15px;
+  }
+  .main-nav{
+    flex-grow: 1;
+    justify-content: flex-end;
+    flex-direction: row;
+    position: relative;
+    height: auto;
+    transform:translateX(0%);
+    position:static;
+    border-bottom-left-radius: 0;
+    width: auto;
+    background-color: transparent;
+    
+
+  }
+  .main-nav a{
+  color: white;
+  
+  }
+.main-header {
+padding: 1rem;
+}
+}
+
+@media (min-width: 1100px){
+    
+      .main-container {
+        max-width: 1060px;
+        margin: auto;
+      }
+      .main-meme-container{
+          flex-direction: row;
+          height: 31.25rem;
+          justify-content: center;
+
+      }
+      .main-nav > * {
+        margin-inline-end: 10px;
+        font-size: 1.5em;
+      
+      }
+      .main-meme-container > :first-child{
+          margin-inline-end: 20px;
+          
+      }
+      .main-btn-content{
+        margin-block-start: 0;
+
+      }
+      
+      
+
+     
+    }
